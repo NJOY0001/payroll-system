@@ -23,6 +23,10 @@ pids/
 *.seed
 *.pid.lock
 
+# Testing
+coverage/
+.nyc_output/
+
 # IDE
 .vscode/
 .idea/
@@ -45,16 +49,4 @@ desktop.ini
 # Build output
 dist/
 build/
-
-# Testing
-coverage/
-.nyc_output/
-
-# Windows-specific
-Thumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# Project-specific
-tmp/
 .temp/
