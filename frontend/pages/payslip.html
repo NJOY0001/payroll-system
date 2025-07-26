@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Slip</title>
+    <link rel="stylesheet" href="../styles/payslip.css">
+</head>
+<body>
+    <header>
+        <h1>ใบแจ้งเงินเดือน</h1>
+        <div class="controls">
+            <div class="employee-selector">
+                <input type="text" id="employeeSearch" placeholder="ค้นหาด้วยรหัสหรือชื่อพนักงาน">
+            </div>
+            <div class="month-selector">
+                <label>เดือน:</label>
+                <input type="month" id="payslipMonth">
+            </div>
+        </div>
+        <div class="actions">
+            <button id="createPDF">Create PDF</button>
+            <button id="print">Print</button>
+            <button id="sendEmail">Send Email</button>
+            <select id="actionScope">
+                <option value="single">เฉพาะพนักงานที่เลือก</option>
+                <option value="all">ทุกคน</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="payslip-container" id="payslipContent">
+            <!-- Pay slip content will be generated here -->
+        </div>
+    </main>
+    <script src="../scripts/payslip.js"></script>
+</body>
+</html>

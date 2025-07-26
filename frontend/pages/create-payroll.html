@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Payroll</title>
+    <link rel="stylesheet" href="../styles/create-payroll.css">
+</head>
+<body>
+    <header>
+        <h1>สร้างรายการเงินเดือน</h1>
+        <div class="month-selector">
+            <label>เดือนที่ต้องการทำรายการ:</label>
+            <input type="month" id="payrollMonth" required>
+        </div>
+    </header>
+
+    <main>
+        <div class="table-container">
+            <table id="payrollCreateTable">
+                <thead>
+                    <tr>
+                        <th>รหัสพนักงาน</th>
+                        <th>ชื่อ-นามสกุล</th>
+                        <th>เงินเดือน</th>
+                        <th>เบี้ยขยัน</th>
+                        <th>OT</th>
+                        <th>สวัสดิการ</th>
+                        <th>เงินได้อื่นๆ</th>
+                        <th>ประกันสังคม</th>
+                        <th>กยศ</th>
+                        <th>เบิกล่วงหน้า</th>
+                        <th>หัก ณ ที่จ่าย</th>
+                        <th>มาสาย</th>
+                        <th>หักอื่นๆ</th>
+                        <th>รวมสุทธิ</th>
+                    </tr>
+                </thead>
+                <tbody id="payrollCreateData">
+                    <!-- Data will be populated from Employee data -->
+                </tbody>
+            </table>
+        </div>
+        <div class="actions">
+            <button id="savePayroll">บันทึกรายการ</button>
+            <button id="calculateAll">คำนวณทั้งหมด</button>
+        </div>
+    </main>
+    <script src="../scripts/create-payroll.js"></script>
+</body>
+</html>

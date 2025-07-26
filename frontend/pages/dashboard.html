@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>ระบบเงินเดือนพนักงาน</h1>
+        <div class="controls">
+            <div class="month-selector">
+                <label>เลือกเดือน:</label>
+                <input type="month" id="monthPicker" multiple>
+            </div>
+            <div class="export-buttons">
+                <button id="exportPDF">Export PDF</button>
+                <button id="exportExcel">Export Excel</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="summary-section">
+            <h2>สรุปรวมเงินเดือนที่ต้องจ่ายทั้งหมด: <span id="totalPayroll">0.00</span> บาท</h2>
+        </div>
+
+        <div class="table-container">
+            <table id="payrollTable">
+                <thead>
+                    <tr>
+                        <th>รหัสพนักงาน</th>
+                        <th>ชื่อ-นามสกุล</th>
+                        <th>ตำแหน่ง</th>
+                        <th>รายได้รวมสุทธิ</th>
+                        <th>ยอดจ่ายสุทธิ</th>
+                        <th>เงินเดือนรวม</th>
+                        <th>รวมเงินได้อื่นๆ</th>
+                        <th>รวมรายการหัก</th>
+                        <th>เงินเดือน</th>
+                        <th>เบี้ยขยัน</th>
+                        <th>OT</th>
+                        <th>สวัสดิการ</th>
+                        <th>ประกันสังคม</th>
+                        <th>กยศ</th>
+                        <th>เบิกล่วงหน้า</th>
+                        <th>หัก ณ ที่จ่าย</th>
+                        <th>มาสาย</th>
+                        <th>อื่นๆ</th>
+                    </tr>
+                </thead>
+                <tbody id="payrollData">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="../scripts/dashboard.js"></script>
+</body>
+</html>

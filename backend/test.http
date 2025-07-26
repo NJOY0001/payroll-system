@@ -1,0 +1,6 @@
+### Test server connection
+GET http://localhost:5000
+
+{
+    "message": "Payroll API is running"
+}
